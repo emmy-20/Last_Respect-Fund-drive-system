@@ -1,0 +1,487 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(224, 150, 11); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: white; /* Ensures readability */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    color: black;
+    padding: 10px 20px 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Main content section */
+main {
+    flex-grow: 1;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    color: black;
+}
+
+/* Intro section */
+.intro {
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Login button */
+a button {
+    display: inline-block;
+    background-color:rgba(0, 0, 255, 0.651); /* Blue color */
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 20%;
+    /* margin-top: 50px; */
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Reset default margin and padding */
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main navigation bar container */
+.navbar {
+    background-color: #2c3e50; /* Dark blue for a professional look */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo styling */
+.navbar .logo {
+    max-height: 50px;
+    width: auto;
+}
+
+/* Navigation list */
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* List item styling */
+.nav-list li {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+/* Link styling */
+.nav-list a {
+    text-decoration: none;
+    color: #ecf0f1; /* Light color for the text */
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for the links */
+.nav-list a:hover {
+    background-color: #3498db; /* Light blue for hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Active link state */
+.nav-list a.active {
+    background-color: #2980b9; /* Slightly darker blue for active */
+    color: #ffffff;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-list li {
+        width: 100%;
+    }
+}
+
+/* Forms */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px auto;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+/* Footer container */
+.footer-container {
+    background-color: #2c3e50; /* Dark blue, same as navbar */
+    color: #ecf0f1; /* Light text for contrast */
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+}
+
+/* Footer section styling */
+.footer-section {
+    max-width: 300px;
+}
+
+/* Footer section headings */
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3498db; /* Light blue accent */
+    padding-bottom: 5px;
+}
+
+/* Footer paragraph styling */
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Footer links */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #3498db; /* Light blue hover effect */
+}
+
+/* Footer bottom section */
+.footer-bottom {
+    background-color: #1a252f; /* Slightly darker for distinction */
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 14px;
+    color: #bdc3c7; /* Soft gray text */
+}
+
+/* Responsive styling for mobile view */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+/*tables styles */
+h2{
+    color: black;
+}
+table {
+    width: 90%; /* Almost full width of the page */
+    margin: 50px auto; /* Center the table on the page */
+    border-collapse: collapse; /* Merge table borders */
+    text-align: center; /* Center text in table cells */
+    font-family: Arial, sans-serif;
+   background-color: #f9f9f9c7; /* Light background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    border-radius: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd; /* Light border */
+}
+
+th {
+    background-color: #4CAF50; /* Green header */
+    color: black;
+    font-size: 18px;
+}
+
+tr {
+    color: black; /* Alternate row color */
+}
+ 
+tr:hover {
+    background-color: #ddd; /* Highlight row on hover */
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: #0056b3;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Form styles*/
+/* Container styling */
+.container {
+    max-width: 500px;
+    margin: 50px auto; /* Centering */
+    padding: 20px;
+    background: #f8f9fa; /* Light background */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Header styling */
+.head {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #2c3e50; /* Dark blue */
+}
+
+/* Form labels */
+form label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+/* Form inputs */
+form input[type="text"],
+form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Checkbox styling */
+form input[type="checkbox"] {
+    margin-left: 5px;
+    transform: scale(1.2);
+}
+
+/* Submit button */
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #297fb9ab; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Button hover effect */
+form button:hover {
+    background-color: #1f6690; /* Darker blue */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .head {
+        font-size: 20px;
+    }
+
+    form button {
+        font-size: 14px;
+    }
+}
+/*notice board*/
+.notice {
+    background: #f4f4f4;
+    padding: 1em;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.notice p {
+    margin: 0.3em 0;
+}
+
+.notice .btn {
+    display: inline-block;
+    margin-top: 0.5em;
+    padding: 0.4em 0.8em;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.notice .btn:hover {
+    background: #0056b3;
+}
+
+
+/*notifications*/
+/* Card container */
+.death-details-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Section headers */
+.death-details-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Info sections */
+.death-info, .affected-member {
+    margin-bottom: 20px;
+}
+
+.death-info p,
+.affected-member p,
+.affected-member li {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Lists inside affected section */
+.affected-member ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Action button */
+.contribute-action {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contribute-action .btn {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contribute-action .btn:hover {
+    background-color: #0056b3;
+}
